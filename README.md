@@ -6,7 +6,7 @@ This repository demonstrates a bug in the CLI behavior of SBT 1.x
 
 SBT 2.x introduces a new semicolon-delimited syntax for multi-task invocations;
 however, whitespace-delimited invocations should still work in 1.x.
-This reproducer shows that a freshly installed SBT 1.x
+This reproducer shows that a freshly installed SBT 1.x fails on whitespace-delimited invocations.
 
 ## Steps
 
