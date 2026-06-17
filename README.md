@@ -13,7 +13,7 @@ This reproducer shows that a freshly installed SBT 1.x fails on whitespace-delim
 First, build the Docker image:
 
 ```shell
-docker build -f Dockerfile -t sbt-cli-taskkeys-mwe
+docker build -f Dockerfile -t sbt-cli-taskkeys-mwe .
 ```
 
 Then run the image:
@@ -33,7 +33,6 @@ SBT compiles (producing no output because there are no classes to compile)
 ## Actual behavior
 
 ```shell
-sbt --version
 ubuntu@4f7036d381e1:/workspace/sbt-cli-taskkeys-mwe$ sbt clean compile 
 [info] server was not detected. starting an instance
 [info] welcome to sbt 1.12.12 (Eclipse Adoptium Java 21.0.8)
